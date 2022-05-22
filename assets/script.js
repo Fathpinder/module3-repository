@@ -17,17 +17,17 @@ var lengthPrompt = function() {
    }
    return false;
 };
-
+var pwLength = lengthPrompt();
+console.log(pwLength);
 // lengthPrompt();
 var passwordOptions = {
   alphabet: "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers: "1234567890",
   special: "!@#$%^&*_+-=",
-  length: lengthPrompt(),
+  length: pwLength,
 };
 function generatePassword() {
-  // const alpha = Math.random().toString(128).substring(0, passwordOptions.length)
-    // console.log(alpha)  
+
 };
 
 generatePassword();
