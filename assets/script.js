@@ -3,7 +3,6 @@ var generateBtn = document.querySelector("#generate");
 
 // Code to prompt user for pw length and character options
 function generatePassword() {
-  console.log("you cliked the button");
   var lengthPrompt = function() {
     var pwLength = window.prompt(
       "Choose password length. Type a number between 8 and 128"
@@ -23,8 +22,7 @@ function generatePassword() {
   
   }
   var pwLength = lengthPrompt();
- 
-  console.log(pwLength);
+  
   var passwordOptions = {
     length: pwLength,
   }
